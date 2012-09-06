@@ -16,6 +16,7 @@ group :assets do
   gem 'bootstrap-sass', '~> 2.0.4.1'
   gem 'simple_form'
   gem 'uglifier', '>= 1.0.3'
+  gem 'bootswatch-rails'
 end
 
 gem 'jquery-rails'
