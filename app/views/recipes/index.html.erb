@@ -1,4 +1,13 @@
-<h1>Listing recipes</h1>
+<h1>Les recettes!</h1>
+<br />
+
+<%= form_tag recipes_path, method: :get, :class => 'form-search' do %>
+  <p>
+    <%= text_field_tag :query, params[:query], :class => 'input-medium' %>
+    <%= submit_tag "Search", name: nil, :class => 'btn btn-primary' %>
+  </p>
+<% end %>
+
 
 <table class="table stripped bordered">
   <tr>
@@ -18,6 +27,8 @@
 <% end %>
 </table>
 
+<%= will_paginate @recipes %>
+
 <br />
 
-<%= link_to 'New Recipe', new_recipe_path %>
+<%= link_to 'New Recipe', new_recipe_path, :class => 'btn btn-primary' %>

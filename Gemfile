@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.7'
 gem 'pg'
 gem 'jquery-rails'
+gem 'will_paginate'
+gem 'pg_search'
+gem 'bootstrap-will_paginate'
 
 group :development, :test do
   gem 'guard'
