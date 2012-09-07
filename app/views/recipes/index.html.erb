@@ -1,28 +1,23 @@
 <h1>Les recettes!</h1>
 <br />
 
-<%= form_tag recipes_path, method: :get, :class => 'form-search' do %>
-  <p>
-    <%= text_field_tag :query, params[:query], :class => 'input-medium' %>
-    <%= submit_tag "Search", name: nil, :class => 'btn btn-primary' %>
-  </p>
-<% end %>
 
 
-<table class="table stripped bordered">
+<table class="table table-stripped table-bordered">
   <tr>
     <th>Title</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
 <% @recipes.each do |recipe| %>
   <tr>
-    <td><%= recipe.title %></td>
-    <td><%= link_to 'Show', recipe %></td>
-    <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-    <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>
+      <%= link_to recipe.title, recipe %>
+    </td>
+    <td>
+      <%= link_to 'Edit', edit_recipe_path(recipe), :class => 'btn' %>
+      <%= link_to 'Destroy', recipe, method: :delete, :class => 'btn btn-danger', data: { confirm: 'Are you sure?' } %>
+    </td>
   </tr>
 <% end %>
 </table>

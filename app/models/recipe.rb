@@ -1,5 +1,5 @@
 class Recipe < ActiveRecord::Base
-  attr_accessible :title
+  attr_accessible :title, :ingredients, :instructions
 
   def self.text_search(query)
     if query.present?

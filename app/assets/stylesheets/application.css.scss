@@ -3,3 +3,14 @@
 body { padding-top: 60px; }
 @import "bootstrap-responsive";
 @import "bootswatch/cerulean/bootswatch";
+
+div.recipe {
+  div.ingredients {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  div.instructions {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

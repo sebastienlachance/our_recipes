@@ -20,5 +20,6 @@ group :assets do
   gem 'simple_form'
   gem 'uglifier', '>= 1.0.3'
   gem 'bootswatch-rails'
+  gem 'redcarpet'
 end
 
