@@ -16,10 +16,16 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="<%= root_url %>">Nos recettes!</a>
+          <ul class="nav">
+            <li>
+              <%= link_to "Categories", categories_path %>
+            </li>
+          </ul>
+          
 
             <%= form_tag recipes_path, method: :get, :class => 'navbar-form pull-right' do %>
 
-              <%= text_field_tag :query, params[:query], :class => 'span2', :style => '' %>
+              <%= text_field_tag :query, params[:query], :class => 'span2', :style => 'margin-top:0px;', :placeholder => 'Recherche' %>
               <%= submit_tag "Recherche", name: nil, :class => 'btn btn-primary' %>
 
             <% end %>

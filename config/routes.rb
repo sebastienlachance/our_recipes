@@ -1,4 +1,6 @@
 OurRecipes::Application.routes.draw do
+  resources :categories
+
   resources :recipes
 
   # The priority is based upon order of creation:

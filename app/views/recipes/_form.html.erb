@@ -5,6 +5,9 @@
     <%= f.input :title %>
   </div>
 
+  <%= f.association :categories, :as => :check_boxes %>
+
+
   <%= f.input :ingredients, :input_html => { :class => 'span10', :rows => 10, :cols => 60} %>
   <%= f.input :instructions %>
 

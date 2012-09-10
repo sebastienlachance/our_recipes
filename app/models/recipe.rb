@@ -1,5 +1,7 @@
 class Recipe < ActiveRecord::Base
-  attr_accessible :title, :ingredients, :instructions
+  attr_accessible :title, :ingredients, :instructions, :category_ids
+
+  has_and_belongs_to_many :categories
 
   def self.text_search(query)
     if query.present?

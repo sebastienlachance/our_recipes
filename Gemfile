@@ -6,6 +6,8 @@ gem 'jquery-rails'
 gem 'will_paginate'
 gem 'pg_search'
 gem 'bootstrap-will_paginate'
+gem 'simple_form'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'guard'
@@ -17,9 +19,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass', '~> 2.0.4.1'
-  gem 'simple_form'
   gem 'uglifier', '>= 1.0.3'
   gem 'bootswatch-rails'
-  gem 'redcarpet'
 end
 
